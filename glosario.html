@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Activar Boodstrap de forma local-->
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <!-- Iconos de Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Insectos Pa´ Sumerce</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .glosario {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .glosario_columnas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 30px;
+        }
+
+        .termino {
+            text-align: justify;
+        }
+
+        .contenedor_imagenes {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: auto;
+            padding: 20px;
+
+        }
+
+        .termino-dinamico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .termino-btn {
+            width: 100%;
+            min-width: 220px;
+            max-width: 320px;
+            min-height: 60px;
+            height: 60px;
+            background: #eaffea;
+            border: 2px solid #17612a;
+            border-radius: 14px;
+            color: #17612a;
+            font-size: 1.13em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(34, 139, 34, 0.10);
+            margin: 0 auto 0 auto;
+            transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 12px;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+
+        .termino-btn:hover {
+            background: #b6fcb6;
+            box-shadow: 0 0 12px 2px #fff70099, 0 2px 8px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px) scale(1.04);
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 18px;">
+            <div>
+                <h1
+                    style="font-style: italic; color: #17612a; font-weight: bold; text-shadow: 0 2px 8px #b6fcb6; display: flex; align-items: center; gap: 10px; font-family: 'Playwrite AU QLD', 'Roboto', serif;">
+                    <span style="font-size: 1.2em; margin-right: 6px;">
+                        <!-- Icono pequeño de insecto (emoji) -->
+                        🐞
+                    </span>
+                    Insectos Pa´Sumerce
+                </h1>
+                <h4 style="color: #17612a; text-shadow: 0 1px 4px #b6fcb6; font-style: italic;">Entomología
+                    Boyacense
+                </h4>
+                <p style="color: #17612a; text-shadow: 0 1px 4px #b6fcb6; font-style: italic;">Datos taxonómicos y
+                    ecología para todos</p>
+            </div>
+        </div>
+
+        <nav class="menu-central">
+            <a href="index.html">
+                <button type="button"><i class="fa-solid fa-house"></i> Inicio </button>
+            </a>
+            <a href="grupos_taxonomicos.html">
+                <button type="button"><i class="fa-solid fa-bug"></i> Grupos Taxonomicos </button>
+            </a>
+            <a href="glosario.html">
+                <button type="button"><i class="fa-solid fa-book-open"></i> Glosario </button>
+            </a>
+            <a href="comentarios.html">
+                <button type="button"><i class="fa-solid fa-comments"></i> Comentarios </button>
+            </a>
+            <a href="contacto.html">
+                <button type="button"><i class="fa-solid fa-envelope"></i> Contacto </button>
+            </a>
+        </nav>
+    </header>
+    <br>
+    <main>
+
+        <section class="glosario">
+
+            <h1>
+                <span style="font-size:1.3em; margin-right: 12px;">📖</span>
+                GLOSARIO DE TERMINOS
+                <span style="font-size:1.3em; margin-left: 12px;">📖</span>
+            </h1>
+            <br>
+            <div class="glosario_columnas">
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Son las acciones o formas de actuar de un ser vivo, como cómo se alimenta, cómo se mueve o cómo se relaciona con otros.')">
+                        <strong>COMPORTAMIENTO</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Se refiere a la variedad de seres vivos que existen en un lugar. Cuantos más tipos diferentes haya, mayor es la diversidad.')">
+                        <strong>DIVERSIDAD</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Es la rama de la biología que estudia cómo los seres vivos se relacionan entre sí y con el ambiente en el que viven.')">
+                        <strong>ECOLOGIA</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Son las alas duras que cubren y protegen las alas blandas de algunos insectos, como los escarabajos.')">
+                        <strong>ÉLITROS</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Es el grupo básico de seres vivos. Una especie está formada por organismos muy parecidos entre sí, que pueden tener crías juntos.')">
+                        <strong>ESPECIES</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('En biología, es un grupo que reúne a varios géneros parecidos entre sí. Es como decir que varias familias forman un barrio.')">
+                        <strong>FAMILIAS</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Es un grupo que reúne a varias especies que son similares. Por ejemplo, los perros, lobos y coyotes son especies distintas, pero pertenecen al mismo género.')">
+                        <strong>GÉNERO</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Son animales pequeños con el cuerpo dividido en tres partes (cabeza, tórax y abdomen), seis patas y, en muchos casos, alas.')">
+                        <strong>INSECTOS</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Son las partes en que se divide el cuerpo de un insecto, como las piezas de un rompecabezas.')">
+                        <strong>SEGMENTOS</strong>
+                    </button>
+                </div>
+                <div class="termino-dinamico">
+                    <button class="btn-toggle termino-btn"
+                        onclick="mostrarDefinicion('Es la ciencia que organiza y clasifica a los seres vivos en grupos, como si fuera un árbol de categorías (especie, género, familia, etc.).')">
+                        <strong>TAXONOMÍA</strong>
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                function mostrarDefinicion(texto) {
+                    // Si ya existe un cuadro, lo elimina antes de crear uno nuevo
+                    let cuadro = document.getElementById('cuadro-definicion-dinamico');
+                    if (cuadro) cuadro.remove();
+
+                    cuadro = document.createElement('div');
+                    cuadro.id = 'cuadro-definicion-dinamico';
+                    cuadro.style.position = 'fixed';
+                    cuadro.style.top = '50%';
+                    cuadro.style.left = '50%';
+                    cuadro.style.transform = 'translate(-50%, -50%)';
+                    cuadro.style.background = '#fff';
+                    cuadro.style.border = '2px solid #17612a';
+                    cuadro.style.borderRadius = '16px';
+                    cuadro.style.boxShadow = '0 4px 24px rgba(34,139,34,0.18)';
+                    cuadro.style.padding = '32px 24px 24px 24px';
+                    cuadro.style.zIndex = '9999';
+                    cuadro.style.width = '420px';
+                    cuadro.style.maxWidth = '90vw';
+                    cuadro.style.height = '220px';
+                    cuadro.style.maxHeight = '90vh';
+                    cuadro.style.display = 'flex';
+                    cuadro.style.flexDirection = 'column';
+                    cuadro.style.justifyContent = 'center';
+                    cuadro.style.alignItems = 'center';
+                    cuadro.style.fontSize = '1.15em';
+                    cuadro.style.color = '#17612a';
+                    cuadro.style.textAlign = 'center';
+                    cuadro.style.fontFamily = "'Roboto', sans-serif";
+                    cuadro.style.overflowY = 'auto';
+
+                    // Botón de cerrar
+                    let btnCerrar = document.createElement('button');
+                    btnCerrar.innerHTML = 'Cerrar';
+                    btnCerrar.style.marginTop = '18px';
+                    btnCerrar.style.background = '#7ddb7d';
+                    btnCerrar.style.color = '#17612a';
+                    btnCerrar.style.fontWeight = 'bold';
+                    btnCerrar.style.border = 'none';
+                    btnCerrar.style.borderRadius = '8px';
+                    btnCerrar.style.padding = '8px 22px';
+                    btnCerrar.style.cursor = 'pointer';
+                    btnCerrar.onclick = function () {
+                        cuadro.remove();
+                    };
+
+                    let textoDef = document.createElement('div');
+                    textoDef.innerText = texto;
+                    textoDef.style.flex = '1';
+                    textoDef.style.display = 'flex';
+                    textoDef.style.alignItems = 'center';
+                    textoDef.style.justifyContent = 'center';
+
+                    cuadro.appendChild(textoDef);
+                    cuadro.appendChild(btnCerrar);
+
+                    document.body.appendChild(cuadro);
+                }
+            </script>
+
+
+        </section>
+
+    </main>
+    <br>
+    <footer>
+        <h4> Todos los derechos reservados</h4>
+        <a href=""> Facebook </a> <a href=""> Instagram</a>
+    </footer>
+
+</body>

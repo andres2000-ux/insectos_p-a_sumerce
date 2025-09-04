@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Activar Boodstrap de forma local-->
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <!-- Iconos de Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Insectos Pa´ Sumerce</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .cuadros {
+            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 30px;
+        }
+
+        .cuadros h3 {
+            text-align: center;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 50px;
+            color: #17612a;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px #b6fcb6;
+            font-size: 25px;
+            margin-bottom: 18px;
+            box-shadow: #17612a;
+        }
+
+        .cuadros img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 18px;">
+            <div>
+                <h1
+                    style="font-style: italic; color: #17612a; font-weight: bold; text-shadow: 0 2px 8px #b6fcb6; display: flex; align-items: center; gap: 10px; font-family: 'Playwrite AU QLD', 'Roboto', serif;">
+                    <span style="font-size: 1.2em; margin-right: 6px;">
+                        <!-- Icono pequeño de insecto (emoji) -->
+                        🐞
+                    </span>
+                    Insectos Pa´Sumerce
+                </h1>
+                <h4 style="color: #17612a; text-shadow: 0 1px 4px #b6fcb6; font-style: italic;">Entomología Boyacense
+                </h4>
+                <p style="color: #17612a; text-shadow: 0 1px 4px #b6fcb6; font-style: italic;">Datos taxonómicos y
+                    ecología para todos</p>
+            </div>
+        </div>
+
+        <nav class="menu-central">
+            <a href="index.html">
+                <button type="button"><i class="fa-solid fa-house"></i> Inicio </button>
+            </a>
+            <a href="grupos_taxonomicos.html">
+                <button type="button"><i class="fa-solid fa-bug"></i> Grupos Taxonomicos </button>
+            </a>
+            <a href="glosario.html">
+                <button type="button"><i class="fa-solid fa-book-open"></i> Glosario </button>
+            </a>
+            <a href="comentarios.html">
+                <button type="button"><i class="fa-solid fa-comments"></i> Comentarios </button>
+            </a>
+            <a href="contacto.html">
+                <button type="button"><i class="fa-solid fa-envelope"></i> Contacto </button>
+            </a>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="cuadros">
+            <section class="himenopteros">
+
+                <h3><strong> Himenopteros <br>(Hormigas, Abejas y Avispas)</strong></h3>
+                <a href="">
+                    <img src="multimedia/Himenoptera.jpg" width="300px" alt="Himenopteros">
+                </a>
+            </section>
+            <section class="coleopteros">
+                <h3> <strong> Coleopteros <br> (Cucarrones o Escarabajos)</strong></h3>
+                <a href="">
+                    <img src="multimedia/escarabajo.jpg" width="300px" alt="Escarabajo"></a>
+            </section>
+            <section class="hemipteros">
+                <h3> <strong> Hemipteros <br> (Chinches y Cigarras)</strong></h3>
+                <a href="">
+                    <img src="multimedia/Hemipteros.png" width="300px" alt="Hemipteros"></a>
+            </section>
+            <section class="ortoptera">
+                <h3> <strong> Ortoptera <br>(Grillos y Saltamontes)</strong></h3>
+                <a href="">
+                    <img src="multimedia/Ortoptera.jpg" width="300px" alt="ortoptera"></a>
+            </section>
+            <section class="lepidoptera">
+                <h3> <strong> Lepidotera <br> (Mariposas y Polillas)</strong></h3>
+                <a href="">
+                    <img src="multimedia/Lepidoptera.jpg" width="300px" alt="mariposa"></a>
+            </section>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <h4> Todos los derechos reservados</h4>
+        <a href=""> Facebook </a> <a href=""> Instagram</a>
+    </footer>
+</body>

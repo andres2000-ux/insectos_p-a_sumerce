@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Activar Boodstrap de forma local-->
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <!-- Iconos de Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Insectos Pa´ Sumerce</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .comentarios {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 18px;">
+            <div>
+                <h1
+                    style="font-style: italic; color: #17612a; font-weight: bold; text-shadow: 0 2px 8px #b6fcb6; display: flex; align-items: center; gap: 10px; font-family: 'Playwrite AU QLD', 'Roboto', serif;">
+                    <span style="font-size: 1.2em; margin-right: 6px;">
+                        <!-- Icono pequeño de insecto (emoji) -->
+                        🐞
+                    </span>
+                    Insectos Pa´Sumerce
+                </h1>
+                <h4 style="color: #17612a; text-shadow: 0 1px 4px #b6fcb6; font-style: italic;">Entomología Boyacense
+                </h4>
+                <p style="color: #17612a; text-shadow: 0 1px 4px #b6fcb6; font-style: italic;">Datos taxonómicos y
+                    ecología para todos</p>
+            </div>
+        </div>
+
+        <nav class="menu-central">
+            <a href="index.html">
+                <button type="button"><i class="fa-solid fa-house"></i> Inicio </button>
+            </a>
+            <a href="grupos_taxonomicos.html">
+                <button type="button"><i class="fa-solid fa-bug"></i> Grupos Taxonomicos </button>
+            </a>
+            <a href="glosario.html">
+                <button type="button"><i class="fa-solid fa-book-open"></i> Glosario </button>
+            </a>
+            <a href="comentarios.html">
+                <button type="button"><i class="fa-solid fa-comments"></i> Comentarios </button>
+            </a>
+            <a href="contacto.html">
+                <button type="button"><i class="fa-solid fa-envelope"></i> Contacto </button>
+            </a>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section>
+            <h2>
+                <i class="fa-solid fa-pencil" style="color: #17612a; margin-right: 10px;"></i>
+                COMENTARIOS
+                <i class="fa-solid fa-pencil" style="color: #17612a; margin-left: 10px;"></i>
+            </h2>
+            <p>¿Deseas hacer un comentario o realizar una pregunta? Usa el siguiente formulario:</p>
+            <div class="comentarios" style="width: 100%; max-width: 420px; margin: 0 auto;">
+                <form action="https://formsubmit.co/andrescusba2000@gmail.com" method="POST"
+                    style="display: flex; flex-direction: column; gap: 16px;">
+                    <!-- Nombre -->
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <label for="nombre" style="font-weight: bold; color: #17612a;">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required
+                            style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #b6fcb6; margin-top: 4px;">
+                    </div>
+                    <!-- Edad -->
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <label for="edad" style="font-weight: bold; color: #17612a;">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="100" required
+                            style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #b6fcb6; margin-top: 4px;">
+                    </div>
+                    <!-- Comentario -->
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <label for="comentario" style="font-weight: bold; color: #17612a;">Comentario o pregunta <span
+                                style="font-size: 0.95em; color: #17612a99;">(máx. 200 letras)</span>:</label>
+                        <textarea id="comentario" name="comentario" rows="4" maxlength="200" required
+                            style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #b6fcb6; margin-top: 4px; resize: vertical;"></textarea>
+                    </div>
+                    <!-- Evitar captcha de FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Redirigir a página de gracias (opcional, puedes crear gracias_coment.html) -->
+                    <input type="hidden" name="_next" value="https://insectospasumerce.com/Index.html">
+                    <button type="submit"
+                        style="background: linear-gradient(90deg, #7ddb7d 85%, #b6fcb6 100%); color: #17612a; font-weight: bold; border: none; border-radius: 8px; padding: 12px 0; font-size: 1.08em; cursor: pointer; margin-top: 8px;">
+                        <i class="fa-solid fa-paper-plane" style="margin-right: 8px;"></i>Enviar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <br>
+    <footer>
+        <h4> Todos los derechos reservados</h4>
+        <a href=""> Facebook </a> <a href=""> Instagram</a>
+    </footer>
+</body>
